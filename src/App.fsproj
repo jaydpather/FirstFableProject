@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="../Shared/Authentication.fs" />
+        <Compile Include="MyAwesomeFeature.fs" />
+        <Compile Include="App.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <!-- todo: documentation says you don't need to list these references here if you're using Paket, but I do -->
+        <PackageReference Include="Fable.Core" Version="3.0.0" />
+        <PackageReference Include="Fable.Browser.Dom" Version="1.0.0" />
+    </ItemGroup>
+</Project>
